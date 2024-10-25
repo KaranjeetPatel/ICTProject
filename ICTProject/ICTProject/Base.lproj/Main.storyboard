@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,7 +22,7 @@
         <!--View Controller-->
         <scene sceneID="fLf-Bs-vE9">
             <objects>
-                <viewController id="nRG-8B-nDD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nRG-8B-nDD" customClass="ViewController" customModule="ICTProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GvG-Sa-DIl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1943.2" y="-438.53073463268368"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="eCa-fM-thb">
             <objects>
-                <viewController id="gVJ-GR-2lA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gVJ-GR-2lA" customClass="loginVC" customModule="ICTProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pLL-sy-JfX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +165,7 @@
                                                             <constraint firstAttribute="height" constant="15" id="KEp-Rk-Hiq"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="michaeldoe01@gmail.com" placeholder="EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-QJ-u2d">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-QJ-u2d">
                                                         <rect key="frame" x="25" y="20" width="320" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="a2B-Gq-hoy"/>
@@ -205,7 +206,7 @@
                                                             <constraint firstAttribute="height" constant="15" id="k2J-96-mMZ"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="● ● ● ● ● ● ● ●" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-fa-oQW">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-fa-oQW">
                                                         <rect key="frame" x="25" y="7.5" width="320" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="Psp-CK-oY3"/>
@@ -278,6 +279,9 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf5-gX-LDT">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="40"/>
+                                                <connections>
+                                                    <segue destination="WG2-nh-Sxg" kind="push" id="KkG-DK-awD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -417,6 +421,34 @@
             </objects>
             <point key="canvasLocation" x="2773.5999999999999" y="-438.53073463268368"/>
         </scene>
+        <!--HomeVC-->
+        <scene sceneID="iGz-S1-hbi">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WG2-nh-Sxg" customClass="HomeVC" customModule="ICTProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g2I-c1-D50">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome to home page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ac-XY-qag">
+                                <rect key="frame" x="95.5" y="323" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mri-Dq-Iry"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ac-XY-qag" firstAttribute="centerX" secondItem="g2I-c1-D50" secondAttribute="centerX" id="9A0-7I-hcC"/>
+                            <constraint firstItem="5ac-XY-qag" firstAttribute="centerY" secondItem="g2I-c1-D50" secondAttribute="centerY" id="qcv-vz-xbP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vty-2S-yXY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpe-JV-Gcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3538" y="-439"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uza-rg-7Na">
             <objects>
@@ -441,5 +473,8 @@
         <image name="Message" width="29" height="20"/>
         <image name="bg" width="1125" height="2436"/>
         <image name="lock" width="22.5" height="27.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

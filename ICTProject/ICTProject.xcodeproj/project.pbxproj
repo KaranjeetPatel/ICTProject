@@ -28,6 +28,8 @@
 		B51C118C2CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-MEDIUMITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = B51C11772CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-MEDIUMITALIC.OTF */; };
 		B51C118D2CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-REGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = B51C11782CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-REGULAR.OTF */; };
 		B51C118E2CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-MEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = B51C11792CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-MEDIUM.OTF */; };
+		B54DFC462CCC02AF00431005 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DFC452CCC02AF00431005 /* loginVC.swift */; };
+		B54DFC482CCC02DD00431005 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54DFC472CCC02DD00431005 /* HomeVC.swift */; };
 		B57422892CC7C73C00BE9EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57422882CC7C73C00BE9EA1 /* AppDelegate.swift */; };
 		B574228D2CC7C73C00BE9EA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574228C2CC7C73C00BE9EA1 /* ViewController.swift */; };
 		B57422902CC7C73C00BE9EA1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B574228F2CC7C73C00BE9EA1 /* Base */; };
@@ -61,6 +63,8 @@
 		B51C11772CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-MEDIUMITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RADOMIR TINKOV - GILROY-MEDIUMITALIC.OTF"; sourceTree = "<group>"; };
 		B51C11782CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-REGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RADOMIR TINKOV - GILROY-REGULAR.OTF"; sourceTree = "<group>"; };
 		B51C11792CCB87A100ECAAFD /* RADOMIR TINKOV - GILROY-MEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RADOMIR TINKOV - GILROY-MEDIUM.OTF"; sourceTree = "<group>"; };
+		B54DFC452CCC02AF00431005 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		B54DFC472CCC02DD00431005 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B57422852CC7C73C00BE9EA1 /* ICTProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICTProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57422882CC7C73C00BE9EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B574228C2CC7C73C00BE9EA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				B51C118F2CCB87B500ECAAFD /* Font */,
 				B57422932CC7C73D00BE9EA1 /* LaunchScreen.storyboard */,
 				B57422962CC7C73D00BE9EA1 /* Info.plist */,
+				B54DFC452CCC02AF00431005 /* loginVC.swift */,
+				B54DFC472CCC02DD00431005 /* HomeVC.swift */,
 			);
 			path = ICTProject;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B574228D2CC7C73C00BE9EA1 /* ViewController.swift in Sources */,
+				B54DFC482CCC02DD00431005 /* HomeVC.swift in Sources */,
+				B54DFC462CCC02AF00431005 /* loginVC.swift in Sources */,
 				B57422892CC7C73C00BE9EA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
